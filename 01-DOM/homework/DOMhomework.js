@@ -9,7 +9,7 @@ var toDoItems = [];
 let created = document.getElementById("createdBy");
 created.innerText = created.innerText + "luciano esquivel"; 
 
-//pepe 
+
 // Crear una clase denominada 'ToDo' cuyo constructor debe recibir un único parámetro del tipo string
 // con el nombre 'description' que será justamente la descripción del ToDo.
 // Agregar dos propiedades a la clase:
@@ -17,12 +17,11 @@ created.innerText = created.innerText + "luciano esquivel";
 // 2) 'complete'    : debe setearse en false
 // Ayuda: usar 'this' en el constructor
 
-function ToDo (description) {
-  // Tu código acá:
-var complete = false 
-var desc = description;
-var elem = this.description; 
-var pepe = 0; 
+class ToDo {
+  constructor(description) {
+    this.description = description
+    this.complete = false; 
+  }
 }
 
 
