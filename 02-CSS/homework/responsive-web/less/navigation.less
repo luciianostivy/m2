@@ -1,1 +1,25 @@
 // Código de Nav acá
+nav {
+    .flex(column, center, center); //llamamos a la funcion para que acomode las cosas
+    padding: 16px;
+    background-color: @nav-bg;
+
+    h1 {
+        font-size: 35px;   //modificamos el musica 8d    
+    }
+
+    ul {
+        .flex(row, space-around, center );
+        width: 40%;
+        padding-top: 15px;
+        a {
+            font-size: 15px;
+            text-decoration: none;
+            color: @nav-font;
+            font-family: nav-font;
+        }
+    }
+
+
+}
+
