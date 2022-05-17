@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import styles from '../styles/Cards.modules.css';
 
 export default function Cards(props) {
   // acá va tu código
@@ -8,7 +9,7 @@ export default function Cards(props) {
     return <h1>no hay ciudades disponibles</h1>
   }
   return (
-    <div>
+    <div className={styles.container}>
       {
         props.cities && props.cities.map (city => (
           <Card
