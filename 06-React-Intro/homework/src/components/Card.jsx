@@ -4,7 +4,7 @@ export default function Card(props) {
   // acá va tu código
   return (
     <div>
-        <button> onClick = {props.onClose}{'>'}X</button>
+        <button> onClick = {props.onClose}X</button>
         <h4> {props.name}</h4>
         <p> min</p>
         <p> {props.min}</p>
