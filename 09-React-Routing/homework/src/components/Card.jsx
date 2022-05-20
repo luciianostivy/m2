@@ -4,6 +4,9 @@ import './Card.css';
 export default function Card ({min, max, name, img, onClose, id}) {
     return (
       <div className="card">
+        <Link to={`/ciudad/${id}`} >
+            <h5 className="card-title">{name}</h5>
+        </Link>
         <div id="closeIcon" className="row">
             <button onClick={onClose} className="btn btn-sm btn-danger">X</button>
         </div>
