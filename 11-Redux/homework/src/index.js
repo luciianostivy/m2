@@ -11,6 +11,8 @@ import counter from './reducers';
 //con cualquier estado inicial con el que queramos que
 //empiece el store (que en este caso es ninguno).
 const store = createStore(counter);
+var valor = document.getElementById('valor');
+
 
 // Aquí, envolvemos nuestro componente principal React dentro de las etiquetas del Provider,
 // que vienen del paquete react-redux.
